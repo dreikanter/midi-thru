@@ -1,0 +1,786 @@
+EESchema Schematic File Version 4
+LIBS:midi-thru-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MIDI THRU"
+Date ""
+Rev "R2"
+Comp "alex@musayev.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC14 U3
+U 3 1 5CBC5E37
+P 6550 2550
+F 0 "U3" H 6550 2867 50  0000 C CNN
+F 1 "74HC14" H 6550 2776 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6550 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6550 2550 50  0001 C CNN
+	3    6550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U3
+U 4 1 5CBC5EDD
+P 6550 3450
+F 0 "U3" H 6550 3767 50  0000 C CNN
+F 1 "74HC14" H 6550 3676 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6550 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6550 3450 50  0001 C CNN
+	4    6550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U3
+U 5 1 5CBC5F79
+P 6550 4350
+F 0 "U3" H 6550 4667 50  0000 C CNN
+F 1 "74HC14" H 6550 4576 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6550 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6550 4350 50  0001 C CNN
+	5    6550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U3
+U 6 1 5CBC6039
+P 6550 5250
+F 0 "U3" H 6550 5567 50  0000 C CNN
+F 1 "74HC14" H 6550 5476 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6550 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6550 5250 50  0001 C CNN
+	6    6550 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U3
+U 7 1 5CBC60EB
+P 5550 5100
+F 0 "U3" H 5780 5146 50  0000 L CNN
+F 1 "74HC14" H 5780 5055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5550 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5550 5100 50  0001 C CNN
+	7    5550 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:6N138 U2
+U 1 1 5CBC6269
+P 2900 1900
+F 0 "U2" H 2900 2367 50  0000 C CNN
+F 1 "6N138" H 2900 2276 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3190 1600 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 3190 1600 50  0001 C CNN
+	1    2900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CBC641E
+P 7100 5250
+F 0 "R2" V 6893 5250 50  0000 C CNN
+F 1 "330" V 6984 5250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7030 5250 50  0001 C CNN
+F 3 "~" H 7100 5250 50  0001 C CNN
+	1    7100 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CBC66E0
+P 4050 1800
+F 0 "R5" V 3843 1800 50  0000 C CNN
+F 1 "1.5K" V 3934 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3980 1800 50  0001 C CNN
+F 3 "~" H 4050 1800 50  0001 C CNN
+	1    4050 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5CBC6A6A
+P 7500 5250
+F 0 "D3" H 7500 5100 50  0000 C CNN
+F 1 "RED" H 7500 5000 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7500 5250 50  0001 C CNN
+F 3 "~" H 7500 5250 50  0001 C CNN
+	1    7500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-5 J2
+U 1 1 5CBC6D73
+P 1600 1900
+F 0 "J2" H 1600 1626 50  0000 C CNN
+F 1 "MIDI IN" H 1600 1535 50  0000 C CNN
+F 2 "turnandpush:din-5" H 1600 1900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1600 1900 50  0001 C CNN
+	1    1600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-5 J6
+U 1 1 5CBC6EF6
+P 7650 2650
+F 0 "J6" H 7650 2283 50  0000 C CNN
+F 1 "MIDI THRU2" H 7650 2374 50  0000 C CNN
+F 2 "turnandpush:din-5" H 7650 2650 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:DIN-5 J5
+U 1 1 5CBC701D
+P 7650 1750
+F 0 "J5" H 7650 1383 50  0000 C CNN
+F 1 "MIDI THRU1" H 7650 1474 50  0000 C CNN
+F 2 "turnandpush:din-5" H 7650 1750 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7650 1750 50  0001 C CNN
+	1    7650 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CBC767C
+P 2350 4000
+F 0 "C1" H 2200 4100 50  0000 L CNN
+F 1 "100 nF" H 2400 4100 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2388 3850 50  0001 C CNN
+F 3 "~" H 2350 4000 50  0001 C CNN
+	1    2350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5CBC7D19
+P 2750 4300
+F 0 "C2" H 2550 4400 50  0000 L CNN
+F 1 "10 uF" H 2800 4400 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2788 4150 50  0001 C CNN
+F 3 "~" H 2750 4300 50  0001 C CNN
+	1    2750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC #SUPPLY01
+U 1 1 5CBC88EF
+P 3150 3550
+F 0 "#SUPPLY01" H 3200 3550 45  0001 L BNN
+F 1 "VCC" H 3150 3720 45  0000 C CNN
+F 2 "XXX-00000" H 3150 3731 60  0001 C CNN
+F 3 "" H 3150 3550 60  0001 C CNN
+	1    3150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:GND #GND01
+U 1 1 5CBC8B00
+P 3150 4750
+F 0 "#GND01" H 3200 4700 45  0001 L BNN
+F 1 "GND" H 3150 4581 45  0000 C CNN
+F 2 "" H 3150 4650 60  0001 C CNN
+F 3 "" H 3150 4650 60  0001 C CNN
+	1    3150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5CBC8D8E
+P 2750 3650
+F 0 "#FLG01" H 2750 3725 50  0001 C CNN
+F 1 "PWR_FLAG" H 2750 3824 50  0000 C CNN
+F 2 "" H 2750 3650 50  0001 C CNN
+F 3 "~" H 2750 3650 50  0001 C CNN
+	1    2750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3650 2350 3850
+Connection ~ 2350 3650
+Wire Wire Line
+	1850 3850 1950 3850
+Connection ~ 2350 4650
+Wire Wire Line
+	3150 3650 3150 3550
+Wire Wire Line
+	3150 4750 3150 4650
+NoConn ~ 1300 2000
+NoConn ~ 1300 1800
+NoConn ~ 1600 1600
+NoConn ~ 7950 2550
+NoConn ~ 7650 2950
+NoConn ~ 7950 1650
+NoConn ~ 7650 2050
+Text GLabel 7950 2750 2    50   Input ~ 0
+GND
+Text GLabel 7950 1850 2    50   Input ~ 0
+GND
+Text GLabel 3250 4650 2    50   Input ~ 0
+GND
+$Comp
+L SparkFun-PowerSymbols:GND #GND05
+U 1 1 5CBD0314
+P 5550 5600
+F 0 "#GND05" H 5600 5550 45  0001 L BNN
+F 1 "GND" H 5550 5431 45  0000 C CNN
+F 2 "" H 5550 5500 60  0001 C CNN
+F 3 "" H 5550 5500 60  0001 C CNN
+	1    5550 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC #SUPPLY04
+U 1 1 5CBD05C9
+P 5550 4600
+F 0 "#SUPPLY04" H 5600 4600 45  0001 L BNN
+F 1 "VCC" H 5550 4770 45  0000 C CNN
+F 2 "XXX-00000" H 5550 4781 60  0001 C CNN
+F 3 "" H 5550 4600 60  0001 C CNN
+	1    5550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CBD1646
+P 2150 1800
+F 0 "R1" V 1943 1800 50  0000 C CNN
+F 1 "220" V 2034 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2080 1800 50  0001 C CNN
+F 3 "~" H 2150 1800 50  0001 C CNN
+	1    2150 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5CBD1A75
+P 2250 2350
+F 0 "D2" H 2250 2134 50  0000 C CNN
+F 1 "1N4148" H 2250 2225 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2250 2350 50  0001 C CNN
+F 3 "~" H 2250 2350 50  0001 C CNN
+	1    2250 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 1800 2000 1800
+Wire Wire Line
+	2300 1800 2500 1800
+Wire Wire Line
+	1900 2000 2000 2000
+Wire Wire Line
+	2000 2000 2000 2350
+Wire Wire Line
+	2000 2350 2100 2350
+Connection ~ 2000 2000
+Wire Wire Line
+	2000 2000 2600 2000
+Wire Wire Line
+	2400 2350 2500 2350
+Wire Wire Line
+	2500 2350 2500 1800
+Connection ~ 2500 1800
+Wire Wire Line
+	2500 1800 2600 1800
+$Comp
+L SparkFun-PowerSymbols:VCC #SUPPLY02
+U 1 1 5CBD721F
+P 3300 1500
+F 0 "#SUPPLY02" H 3350 1500 45  0001 L BNN
+F 1 "VCC" H 3300 1670 45  0000 C CNN
+F 2 "XXX-00000" H 3300 1681 60  0001 C CNN
+F 3 "" H 3300 1500 60  0001 C CNN
+	1    3300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:GND #GND02
+U 1 1 5CBD78D2
+P 3300 2200
+F 0 "#GND02" H 3350 2150 45  0001 L BNN
+F 1 "GND" H 3300 2031 45  0000 C CNN
+F 2 "" H 3300 2100 60  0001 C CNN
+F 3 "" H 3300 2100 60  0001 C CNN
+	1    3300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5CBD86A5
+P 3550 1700
+F 0 "R4" V 3343 1700 50  0000 C CNN
+F 1 "1K" V 3434 1700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3480 1700 50  0001 C CNN
+F 3 "~" H 3550 1700 50  0001 C CNN
+	1    3550 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 1700 3300 1700
+Wire Wire Line
+	3300 1700 3300 1500
+Wire Wire Line
+	3800 2000 3800 1700
+Wire Wire Line
+	3800 1700 3700 1700
+Wire Wire Line
+	3200 2100 3300 2100
+Wire Wire Line
+	3300 2200 3300 2100
+Wire Wire Line
+	4200 1800 4300 1800
+Wire Wire Line
+	4300 1800 4300 2100
+Wire Wire Line
+	3200 2000 3800 2000
+Wire Wire Line
+	3300 1700 3400 1700
+Connection ~ 3300 1700
+Wire Wire Line
+	3200 1800 3900 1800
+Wire Wire Line
+	3300 2100 4300 2100
+Connection ~ 3300 2100
+Text GLabel 3900 2000 2    50   Input ~ 0
+RX
+Wire Wire Line
+	3800 2000 3900 2000
+Connection ~ 3800 2000
+$Comp
+L Device:R R8
+U 1 1 5CBEDF49
+P 7100 1650
+F 0 "R8" V 7307 1650 50  0000 C CNN
+F 1 "220" V 7216 1650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7030 1650 50  0001 C CNN
+F 3 "~" H 7100 1650 50  0001 C CNN
+	1    7100 1650
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	1100 1100 4600 1100
+Wire Notes Line
+	4600 1100 4600 2800
+Wire Notes Line
+	4600 2800 1100 2800
+Wire Notes Line
+	1100 2800 1100 1100
+Text Notes 1200 1250 0    50   ~ 0
+MIDI IN port with decoupling
+$Comp
+L Device:R R10
+U 1 1 5CC0A6C8
+P 7100 2550
+F 0 "R10" V 7307 2550 50  0000 C CNN
+F 1 "220" V 7216 2550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7030 2550 50  0001 C CNN
+F 3 "~" H 7100 2550 50  0001 C CNN
+	1    7100 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5CC34AB7
+P 7100 1850
+F 0 "R9" V 7200 1950 50  0000 C CNN
+F 1 "220" V 7200 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7030 1850 50  0001 C CNN
+F 3 "~" H 7100 1850 50  0001 C CNN
+	1    7100 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC #SUPPLY06
+U 1 1 5CC34ABE
+P 6850 1850
+F 0 "#SUPPLY06" H 6900 1850 45  0001 L BNN
+F 1 "VCC" V 6850 1978 45  0000 L CNN
+F 2 "XXX-00000" H 6850 2031 60  0001 C CNN
+F 3 "" H 6850 1850 60  0001 C CNN
+	1    6850 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5CC35E70
+P 7100 2750
+F 0 "R11" V 7200 2850 50  0000 C CNN
+F 1 "220" V 7200 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7030 2750 50  0001 C CNN
+F 3 "~" H 7100 2750 50  0001 C CNN
+	1    7100 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC #SUPPLY07
+U 1 1 5CC35E77
+P 6850 2750
+F 0 "#SUPPLY07" H 6900 2750 45  0001 L BNN
+F 1 "VCC" V 6850 2878 45  0000 L CNN
+F 2 "XXX-00000" H 6850 2931 60  0001 C CNN
+F 3 "" H 6850 2750 60  0001 C CNN
+	1    6850 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 1650 6950 1650
+Wire Wire Line
+	7250 1650 7350 1650
+Wire Wire Line
+	6850 1850 6950 1850
+Wire Wire Line
+	7250 1850 7350 1850
+Wire Wire Line
+	6850 2550 6950 2550
+Wire Wire Line
+	7250 2550 7350 2550
+Wire Wire Line
+	6850 2750 6950 2750
+Wire Wire Line
+	7250 2750 7350 2750
+Wire Wire Line
+	6050 1650 6150 1650
+Wire Wire Line
+	6150 1650 6150 2550
+Wire Wire Line
+	6150 2550 6250 2550
+Connection ~ 6150 1650
+Wire Wire Line
+	6150 1650 6250 1650
+$Comp
+L Connector:DIN-5 J7
+U 1 1 5CC58EAE
+P 7650 3550
+F 0 "J7" H 7650 3183 50  0000 C CNN
+F 1 "MIDI THRU3" H 7650 3274 50  0000 C CNN
+F 2 "turnandpush:din-5" H 7650 3550 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7650 3550 50  0001 C CNN
+	1    7650 3550
+	-1   0    0    1   
+$EndComp
+NoConn ~ 7950 3450
+NoConn ~ 7650 3850
+Text GLabel 7950 3650 2    50   Input ~ 0
+GND
+$Comp
+L Device:R R12
+U 1 1 5CC58EB8
+P 7100 3450
+F 0 "R12" V 7307 3450 50  0000 C CNN
+F 1 "220" V 7216 3450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7030 3450 50  0001 C CNN
+F 3 "~" H 7100 3450 50  0001 C CNN
+	1    7100 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5CC58EBF
+P 7100 3650
+F 0 "R13" V 7200 3750 50  0000 C CNN
+F 1 "220" V 7200 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7030 3650 50  0001 C CNN
+F 3 "~" H 7100 3650 50  0001 C CNN
+	1    7100 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC #SUPPLY08
+U 1 1 5CC58EC6
+P 6850 3650
+F 0 "#SUPPLY08" H 6900 3650 45  0001 L BNN
+F 1 "VCC" V 6850 3778 45  0000 L CNN
+F 2 "XXX-00000" H 6850 3831 60  0001 C CNN
+F 3 "" H 6850 3650 60  0001 C CNN
+	1    6850 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 3450 6950 3450
+Wire Wire Line
+	7250 3450 7350 3450
+Wire Wire Line
+	6850 3650 6950 3650
+Wire Wire Line
+	7250 3650 7350 3650
+Text GLabel 5450 1650 0    50   Input ~ 0
+RX
+Wire Wire Line
+	6150 2550 6150 3450
+Wire Wire Line
+	6150 3450 6250 3450
+Wire Notes Line
+	5000 1100 8500 1100
+Text Notes 5100 1250 0    50   ~ 0
+MIDI THRU
+Wire Notes Line
+	1100 3200 4600 3200
+Wire Notes Line
+	4600 3200 4600 5000
+Wire Notes Line
+	4600 5000 1100 5000
+Wire Notes Line
+	1100 5000 1100 3200
+Text Notes 1200 3350 0    50   ~ 0
+Power
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 5CC71F00
+P 1550 3750
+F 0 "J1" H 1600 4000 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1605 3976 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1600 3710 50  0001 C CNN
+F 3 "~" H 1600 3710 50  0001 C CNN
+	1    1550 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6150 2550
+$Comp
+L Device:D D1
+U 1 1 5CC9CA05
+P 2100 3650
+F 0 "D1" H 2100 3434 50  0000 C CNN
+F 1 "UF4007" H 2100 3525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2100 3650 50  0001 C CNN
+F 3 "~" H 2100 3650 50  0001 C CNN
+	1    2100 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 3650 2350 3650
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5CCA0AD3
+P 2750 4650
+F 0 "#FLG02" H 2750 4725 50  0001 C CNN
+F 1 "PWR_FLAG" H 2750 4823 50  0000 C CNN
+F 2 "" H 2750 4650 50  0001 C CNN
+F 3 "~" H 2750 4650 50  0001 C CNN
+	1    2750 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 3650 1950 3650
+Wire Wire Line
+	1950 4650 2350 4650
+Wire Wire Line
+	1950 3850 1950 4650
+Wire Wire Line
+	2350 4150 2350 4650
+Wire Wire Line
+	2750 4450 2750 4650
+$Comp
+L Device:R R14
+U 1 1 5CBEEE77
+P 3150 3950
+F 0 "R14" H 3250 4000 50  0000 L CNN
+F 1 "330" H 3250 3900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3080 3950 50  0001 C CNN
+F 3 "~" H 3150 3950 50  0001 C CNN
+	1    3150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5CBEEE7E
+P 3150 4350
+F 0 "D6" V 3250 4150 50  0000 L CNN
+F 1 "PWR" V 3150 4100 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 3150 4350 50  0001 C CNN
+F 3 "~" H 3150 4350 50  0001 C CNN
+	1    3150 4350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2750 4650
+Wire Wire Line
+	2750 4150 2750 3650
+Connection ~ 2750 3650
+Wire Wire Line
+	3150 3650 3150 3800
+Connection ~ 3150 3650
+Wire Wire Line
+	3150 4100 3150 4200
+Wire Wire Line
+	3150 4500 3150 4650
+Wire Wire Line
+	3150 4650 3250 4650
+Connection ~ 3150 4650
+Wire Wire Line
+	2750 3650 3150 3650
+Wire Wire Line
+	2750 4650 3150 4650
+Wire Wire Line
+	2350 3650 2750 3650
+Wire Wire Line
+	2350 4650 2750 4650
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5CC2CAA4
+P 9600 1300
+F 0 "H1" V 9600 1450 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9645 1450 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 9600 1300 50  0001 C CNN
+F 3 "~" H 9600 1300 50  0001 C CNN
+	1    9600 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5CC2D3C1
+P 9600 1600
+F 0 "H2" V 9600 1750 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9645 1750 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 9600 1600 50  0001 C CNN
+F 3 "~" H 9600 1600 50  0001 C CNN
+	1    9600 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5CC2DA55
+P 9600 1900
+F 0 "H3" V 9600 2050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9645 2050 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 9600 1900 50  0001 C CNN
+F 3 "~" H 9600 1900 50  0001 C CNN
+	1    9600 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5CC2DA5C
+P 9600 2200
+F 0 "H4" V 9600 2350 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9645 2350 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 9600 2200 50  0001 C CNN
+F 3 "~" H 9600 2200 50  0001 C CNN
+	1    9600 2200
+	0    1    1    0   
+$EndComp
+NoConn ~ 9500 1300
+NoConn ~ 9500 1600
+NoConn ~ 9500 1900
+NoConn ~ 9500 2200
+$Comp
+L 74xx:74HC14 U3
+U 1 1 5CC79BB1
+P 5750 1650
+F 0 "U3" H 5750 1967 50  0000 C CNN
+F 1 "74HC14" H 5750 1876 50  0000 C CNN
+F 2 "" H 5750 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5750 1650 50  0001 C CNN
+	1    5750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U3
+U 2 1 5CC79D59
+P 6550 1650
+F 0 "U3" H 6550 1967 50  0000 C CNN
+F 1 "74HC14" H 6550 1876 50  0000 C CNN
+F 2 "" H 6550 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6550 1650 50  0001 C CNN
+	2    6550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-5 J4
+U 1 1 5CC7D072
+P 7650 4450
+F 0 "J4" H 7650 4083 50  0000 C CNN
+F 1 "MIDI THRU3" H 7650 4174 50  0000 C CNN
+F 2 "turnandpush:din-5" H 7650 4450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 7650 4450 50  0001 C CNN
+	1    7650 4450
+	-1   0    0    1   
+$EndComp
+NoConn ~ 7950 4350
+NoConn ~ 7650 4750
+Text GLabel 7950 4550 2    50   Input ~ 0
+GND
+$Comp
+L Device:R R3
+U 1 1 5CC7D07C
+P 7100 4350
+F 0 "R3" V 7307 4350 50  0000 C CNN
+F 1 "220" V 7216 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7030 4350 50  0001 C CNN
+F 3 "~" H 7100 4350 50  0001 C CNN
+	1    7100 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5CC7D083
+P 7100 4550
+F 0 "R6" V 7200 4650 50  0000 C CNN
+F 1 "220" V 7200 4450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7030 4550 50  0001 C CNN
+F 3 "~" H 7100 4550 50  0001 C CNN
+	1    7100 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC #SUPPLY03
+U 1 1 5CC7D08A
+P 6850 4550
+F 0 "#SUPPLY03" H 6900 4550 45  0001 L BNN
+F 1 "VCC" V 6850 4678 45  0000 L CNN
+F 2 "XXX-00000" H 6850 4731 60  0001 C CNN
+F 3 "" H 6850 4550 60  0001 C CNN
+	1    6850 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 4350 6950 4350
+Wire Wire Line
+	7250 4350 7350 4350
+Wire Wire Line
+	6850 4550 6950 4550
+Wire Wire Line
+	7250 4550 7350 4550
+Wire Wire Line
+	6150 3450 6150 4350
+Wire Wire Line
+	6150 4350 6250 4350
+Wire Wire Line
+	6150 4350 6150 5250
+Wire Wire Line
+	6150 5250 6250 5250
+Connection ~ 6150 4350
+$Comp
+L SparkFun-PowerSymbols:VCC #SUPPLY05
+U 1 1 5CC86D5F
+P 7750 5250
+F 0 "#SUPPLY05" H 7800 5250 45  0001 L BNN
+F 1 "VCC" V 7750 5450 45  0000 C CNN
+F 2 "XXX-00000" H 7750 5431 60  0001 C CNN
+F 3 "" H 7750 5250 60  0001 C CNN
+	1    7750 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 5250 7750 5250
+Wire Wire Line
+	7250 5250 7350 5250
+Wire Wire Line
+	6850 5250 6950 5250
+Wire Notes Line
+	5000 6050 8500 6050
+Wire Notes Line
+	8500 1100 8500 6050
+Wire Notes Line
+	5000 1100 5000 6050
+Connection ~ 6150 3450
+Wire Wire Line
+	1850 3750 1950 3750
+Wire Wire Line
+	1950 3750 1950 3850
+Connection ~ 1950 3850
+$EndSCHEMATC
